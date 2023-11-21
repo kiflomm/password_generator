@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+#parent{
+    background-color: brown;
+    width: 400px;
+    height: 400px;
+    padding: 25px;
+    margin: 100px auto;
+}
+#view{
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    border: 2px solid green;
+    padding: 10px;
+    background-color: white; 
+    letter-spacing: 0.5em;
+}
+#copy{
+    position: absolute;
+    top: 0px;
+    right: 0px; 
+}
+.parametr{
+    font-size: large;
+}
+.parametr input{
+    float: right;
+}
+#generate{
+    width: 60%;
+    margin: 30px 100px;
+    padding: 10px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div id="parent">
+        <div id="view">
+            <span id="display">Hi345@!A</span><input type="button" value="copy" id="copy">
+        </div>
+        <div id="parametrs">
+            <div class="parametr"><label>password length<input type="number" name="length" value="8"></label></div>
+            <div class="parametr"><label>contain uppercase letter <input type="checkbox" name="uppercase"></label></div>
+            <div class="parametr"><label>contain lowercase letter <input type="checkbox" name="lowercase"></label></div>
+            <div class="parametr"><label>contain numbers <input type="checkbox" name="numbers"></label></div>
+            <div class="parametr"><label>contain symbols <input type="checkbox" name="symbols"></label></div>
+        </div>
+        <input type="button" value="Generet password" onclick="generater()" id="generate">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

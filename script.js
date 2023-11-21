@@ -1,4 +1,3 @@
-/* code by kiflom */
 let display = document.getElementById('display');
 let copy = document.getElementById('copy');
 let lengthChoose = document.getElementsByName('length')[0];
@@ -15,6 +14,15 @@ let symbols = "!@#$%^&*()_+=";
 
 let password ='';
 function generater(){
+    if(!uppercaseCheck.checked&&
+        !lowercaseCheck.checked&&
+        !numbersCheck.checked&&
+        !symbolsCheck.checked
+        ){
+            alert("Please check at least one check box");
+            retun;
+        }
+
     password =''; 
     for(;password.length<lengthChoose.value;){
         if(uppercaseCheck.checked){
@@ -43,4 +51,13 @@ function generater(){
         }
     }
     display.innerHTML = password;
+}
+function copyThis(){
+    let inputType = document.createElement("input");
+    inputType.value = display.innerText;
+    document.body.appendChild(inputType);
+    inputType.select();
+    document.execCommand("copy");
+    document.body.removeChild(inputType);
+    alert("mission comleted!");
 }

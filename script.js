@@ -1,3 +1,4 @@
+/* code by kiflom */
 let display = document.getElementById('display');
 let copy = document.getElementById('copy');
 let lengthChoose = document.getElementsByName('length')[0];
